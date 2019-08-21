@@ -1,10 +1,8 @@
 package site.samplecode.samplerecyclerviewjava;
 
-import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class RecyclerMainAdapter extends RecyclerView.Adapter<RecyclerMainAdapter.ViewHolder> {
@@ -22,12 +19,10 @@ public class RecyclerMainAdapter extends RecyclerView.Adapter<RecyclerMainAdapte
         void onClick(View view, int position);
     }
 
-    private Context mContext;
     private List<ModelDataMain> mData;
     private RecyclerViewClickListener mListener;
 
-    public RecyclerMainAdapter(Context mContext, List<ModelDataMain> mData, RecyclerViewClickListener mListener) {
-        this.mContext = mContext;
+    RecyclerMainAdapter(List<ModelDataMain> mData, RecyclerViewClickListener mListener) {
         this.mData = mData;
         this.mListener = mListener;
     }

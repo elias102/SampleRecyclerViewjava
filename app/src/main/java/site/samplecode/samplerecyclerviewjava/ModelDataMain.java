@@ -2,41 +2,35 @@ package site.samplecode.samplerecyclerviewjava;
 
 import android.graphics.drawable.Drawable;
 
-public class ModelDataMain {
+class ModelDataMain {
     private int id;
     private String title;
     private Drawable image;
 
-    public ModelDataMain() {
+    ModelDataMain() {
     }
 
-    public ModelDataMain(int id, String title, Drawable image) {
-        this.id = id;
-        this.title = title;
-        this.image = image;
-    }
-
-    public int getId() {
+    int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    void setId(int id) {
         this.id = id;
     }
 
-    public String getTitle() {
+    String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
+    void setTitle(String title) {
         this.title = title;
     }
 
-    public Drawable getImage() {
+    Drawable getImage() {
         return image;
     }
 
-    public void setImage(Drawable image) {
+    void setImage(Drawable image) {
         this.image = image;
     }
 }
