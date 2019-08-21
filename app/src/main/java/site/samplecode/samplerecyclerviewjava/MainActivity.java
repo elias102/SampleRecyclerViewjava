@@ -1,5 +1,7 @@
 package site.samplecode.samplerecyclerviewjava;
 
+import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -59,6 +61,19 @@ public class MainActivity extends AppCompatActivity {
     private void populateArrayList(List<ModelDataMain> dataMain) {
 
         dataMain.clear();
+        int index = 4;
+        int[] icons = {R.drawable.icon_1,R.drawable.icon_2,R.drawable.icon_3,R.drawable.icon_4,R.drawable.icon_5};
+
+        for (int i=0; i<=index; i++) {
+            dataMain.add(new ModelDataMain());
+            dataMain.get(i).setId(i);
+            dataMain.get(i).setTitle("item "+i+" of recyclerView");
+
+            Drawable drawable = getDrawable(icons[i]);
+            dataMain.get(i).setImage(drawable);
+        }
+
+        /*dataMain.clear();
         dataMain.add(new ModelDataMain());
         dataMain.get(0).setId(1);
         dataMain.get(0).setTitle("item one of recyclerView");
@@ -83,6 +98,6 @@ public class MainActivity extends AppCompatActivity {
         dataMain.get(4).setId(5);
         dataMain.get(4).setTitle("item five of recyclerView");
         dataMain.get(4).setImage(getDrawable(R.drawable.icon_5));
-
+*/
     }
 }
