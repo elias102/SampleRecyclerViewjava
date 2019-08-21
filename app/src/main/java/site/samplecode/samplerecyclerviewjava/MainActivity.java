@@ -1,9 +1,8 @@
 package site.samplecode.samplerecyclerviewjava;
 
-import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -72,32 +71,5 @@ public class MainActivity extends AppCompatActivity {
             Drawable drawable = getDrawable(icons[i]);
             dataMain.get(i).setImage(drawable);
         }
-
-        /*dataMain.clear();
-        dataMain.add(new ModelDataMain());
-        dataMain.get(0).setId(1);
-        dataMain.get(0).setTitle("item one of recyclerView");
-        dataMain.get(0).setImage(getDrawable(R.drawable.icon_1));
-
-        dataMain.add(new ModelDataMain());
-        dataMain.get(1).setId(2);
-        dataMain.get(1).setTitle("item two of recyclerView");
-        dataMain.get(1).setImage(getDrawable(R.drawable.icon_2));
-
-        dataMain.add(new ModelDataMain());
-        dataMain.get(2).setId(3);
-        dataMain.get(2).setTitle("item three of recyclerView");
-        dataMain.get(2).setImage(getDrawable(R.drawable.icon_3));
-
-        dataMain.add(new ModelDataMain());
-        dataMain.get(3).setId(4);
-        dataMain.get(3).setTitle("item four of recyclerView");
-        dataMain.get(3).setImage(getDrawable(R.drawable.icon_4));
-
-        dataMain.add(new ModelDataMain());
-        dataMain.get(4).setId(5);
-        dataMain.get(4).setTitle("item five of recyclerView");
-        dataMain.get(4).setImage(getDrawable(R.drawable.icon_5));
-*/
     }
 }
