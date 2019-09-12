@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        RecyclerMainAdapter recyclerMainAdapter = new RecyclerMainAdapter(MainActivity.this, modelDataMains, listener);
+        RecyclerMainAdapter recyclerMainAdapter = new RecyclerMainAdapter(modelDataMains, listener);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(recyclerMainAdapter);
     }
